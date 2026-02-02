@@ -1,5 +1,6 @@
 import requests
 
+
 def test_echo_get_status_code():
     response = requests.get("https://postman-echo.com/get")
     assert response.status_code == 200
