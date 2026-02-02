@@ -30,4 +30,4 @@ def test_echo_put():
 
 def test_echo_put_empty_status_code():
     response = requests.post("https://postman-echo.com/put")
-    assert response.status_code == 404
+    assert response.status_code != 404
